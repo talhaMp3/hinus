@@ -14,32 +14,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-57x57.png') }}">
+    {{-- <link rel="apple-touch-icon" sizes="57x57" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-60x60.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-72x72.png') }}">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-76x76.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-114x114.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-120x120.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-144x144.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-152x152.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/android-icon-192x192.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-96x96.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x92" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/ms-icon-144x144.png') }}">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> --}}
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-57x57.png')}}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-60x60.png')}}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-72x72.png')}}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-76x76.png')}}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-114x114.png')}}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-120x120.png')}}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-144x144.png')}}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-152x152.png')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-180x180.png')}}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/android-icon-192x192.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-96x96.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-16x16.png')}}">
+<link rel="manifest" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/manifest.json')}}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/ms-icon-144x144.png')}}">
+<meta name="theme-color" content="#ffffff">
 
     <!--==============================
  Google Fonts
@@ -203,7 +213,7 @@ Product Lightbox
             <div class="widget  ">
                 <div class="th-widget-about">
                     <div class="about-logo">
-                        <a href="home-medical-clinic.html"><img src="assets/img/logo.svg" alt="Mediax"></a>
+                        <a href="{{route('user.index')}}"><img src="{{asset('frontend/assets/img/logo.svg')}}" alt="Mediax"></a>
                     </div>
                     <p class="about-text">Subscribe to out newsletter today to receive latest news administrate cost
                         effective for tactical data.</p>
@@ -253,13 +263,13 @@ Product Lightbox
             </div>
         </div>
     </div>
-    <div class="popup-search-box d-none d-lg-block">
+    {{-- <div class="popup-search-box d-none d-lg-block">
         <button class="searchClose"><i class="fal fa-times"></i></button>
         <form action="#">
             <input type="text" placeholder="What are you looking for?">
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
-    </div>
+    </div> --}}
     <!--==============================
     Mobile Menu
   ============================== -->
@@ -267,7 +277,7 @@ Product Lightbox
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="home-medical-clinic.html"><img src="assets/img/logo.svg" alt="Mediax"></a>
+                <a href="{{route('user.index')}}"><img src="{{asset('frontend/assets/img/logo.svg')}}" alt="Mediax"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -291,16 +301,16 @@ Product Lightbox
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-logo">
-                            <a href="home-medical-clinic.html"><img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/logo.svg') }}"
-                                    alt="Mediax"></a>
+                            <a href="{{route('user.index')}}"><img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/logo.svg') }}"
+                                 style="width: 202px;height:62px"   alt="Mediax"></a>
                         </div>
                     </div>
-                    <div class="col-auto">
+                    {{-- <div class="col-auto">
                         <form class="search-form">
                             <input type="text" placeholder="Search Here...">
                             <button type="submit"><i class="far fa-search"></i></button>
                         </form>
-                    </div>
+                    </div> --}}
                     <div class="col-auto d-none d-lg-block">
                         <div class="info-card-wrap">
                             <div class="info-card">
@@ -346,7 +356,7 @@ Product Lightbox
                         </div>
                         <div class="col-auto d-inline-block d-lg-none">
                             <div class="header-logo">
-                                <a href="home-medical-clinic.html"><img src="assets/img/logo-white.svg"
+                                <a href="{{route('user.index')}}"><img src="{{asset('frontend/assets/img/logo-white.svg')}}"
                                         alt="Mediax"></a>
                             </div>
                         </div>
@@ -467,7 +477,7 @@ Product Lightbox
                                     <input type="checkbox" id="checkbox" name="checkbox">
                                     <label for="checkbox">I agree with the terms & conditions</label>
                                 </div>
-                                <div class="btn-group">
+                                {{-- <div class="btn-group">
                                     <a href="https://play.google.com/" class="img-btn">
                                         <img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/normal/apple_store.png') }}"
                                             alt="icon">
@@ -476,7 +486,7 @@ Product Lightbox
                                         <img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/normal/play_store.png') }}"
                                             alt="icon">
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -488,7 +498,7 @@ Product Lightbox
                 <div class="row gy-2 align-items-center">
                     <div class="col-md-7">
                         <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a
-                                href="home-medical-clinic.html">Mediax</a>. All Rights Reserved.</p>
+                                href="{{route('user.index')}}">Mediax</a>. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-5 text-center text-md-end">
                         <div class="payment-img">

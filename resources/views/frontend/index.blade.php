@@ -280,7 +280,7 @@ Cta Area
                         <h2 class="sec-title text-white">Blood Pressure Medicine</h2>
                         <p class="box-text text-white">Free Shipping on Order Over $49</p>
                         <a href="shop-details.html" class="th-btn">Shop Now</a>
-                        <ul class="counter-list countdown-style1" data-offer-date="02/01/2025">
+                        {{-- <ul class="counter-list countdown-style1" data-offer-date="02/01/2025">
                             <li>
                                 <div>
                                     <div class="day count-number">00</div>
@@ -305,7 +305,7 @@ Cta Area
                                     <span class="count-name">Seconds</span>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -339,27 +339,6 @@ Product Area
                     </div>
                     <div class="row gy-40">
 
-                        {{-- <div class="col-lg-4 col-sm-6">
-                            <div class="th-product product-grid">
-                                <div class="product-img">
-                                    <img src="{{ asset('frontend/assets/img/product/product_1_1.jpg') }}"
-                                        alt="Product Image">
-                                    <span class="product-tag">Sale!</span>
-                                    <div class="actions">
-                                        <a href="#QuickView" class="icon-btn popup-content"><i
-                                                class="far fa-eye"></i></a>
-                                        <a href="cart.html" class="icon-btn"><i class="far fa-cart-plus"></i></a>
-                                        <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-content">
-                                    <a href="shop-details.html" class="product-category">Accessories</a>
-                                    <h3 class="product-title"><a href="shop-details.html">Surgery Hands Gloves</a>
-                                    </h3>
-                                    <span class="price">$20.00 - <del>$30.00</del></span>
-                                </div>
-                            </div>
-                        </div> --}}
                 @foreach ($TopProduct as $item)
                     <div class=" col-lg-4 col-sm-6 ">
                         <div class="th-product product-grid">
@@ -641,7 +620,7 @@ Brand Area
     <!--==============================
 Product Area
 ==============================-->
-    <section class="space-top">
+    {{-- <section class="space-top">
         <div class="container">
             <div class="row gy-40">
                 <div class="col-xl-6">
@@ -832,7 +811,7 @@ Product Area
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--==============================
 Blog Area
 ==============================-->
@@ -865,7 +844,6 @@ Blog Area
                         </div>
                     </div>
                 </div>
-
                 <div class="col-xl-4 col-md-6">
                     <div class="blog-box">
                         <div class="blog-img">

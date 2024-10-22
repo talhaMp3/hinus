@@ -17,7 +17,7 @@ class QuickViewController extends Controller
                 'slug' => $ProductData->slug,
                 'description' => $ProductData->description,
                 'category' => $ProductData->category->cat_name,
-                'main_image_url' => asset(config('constant.IMG_DIR.MAIN_IMAGE') . '/' . $ProductData->main_image) ,
+                'main_image_url' => asset(config('constant.IMG_DIR.MAIN_IMAGE') . '/' . $ProductData->hri) ,
             ]
         ]);
     }

@@ -94,7 +94,8 @@ Version: 1.0.0
 
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
-:root {
+/* Orignal */
+/* :root {
   --theme-color: #04CE78;
   --theme-color2: #1F5FFF;
   --title-color: #000D44;
@@ -118,7 +119,60 @@ Version: 1.0.0
   --section-space-mobile: 80px;
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
+} */
+/* full green */
+/* :root {
+  --theme-color: #04CE78; 
+  --theme-color2: #01825C; 
+  --title-color: #003E2A; 
+  --body-color: #6D7671; 
+  --smoke-color: #F1F3F2; 
+  --smoke-color2: #E8F0EC; 
+  --black-color: #000000; 
+  --gray-color: #bdbdbd; 
+  --white-color: #ffffff; 
+  --light-color: #E0E0E0; 
+  --yellow-color: #FFB539; 
+  --success-color: #04CE78; 
+  --error-color: #dc3545; 
+  --th-border-color: #D8DDE1; 
+  --title-font: 'Outfit', sans-serif; 
+  --body-font: 'DM Sans', sans-serif; 
+  --icon-font: "Font Awesome 6 Pro"; 
+  --main-container: 1224px; 
+  --container-gutters: 24px; 
+  --section-space: 120px; 
+  --section-space-mobile: 80px; 
+  --section-title-space: 60px; 
+  --ripple-ani-duration: 5s; 
+} */
+ /* green blend */
+ :root {
+  --theme-color: #04CE78; /* Main theme color: Green from the logo */
+  --theme-color2: #1F88FF; /* Blue for secondary accents */
+  --title-color: #02455A; /* A blend of green and blue for titles */
+  --body-color: #5A7078; /* Muted bluish-gray for body text */
+  --smoke-color: #F2F7FA; /* Light blue-tinted background */
+  --smoke-color2: #E8F5F3; /* Soft blend of green and blue for secondary background */
+  --black-color: #000000; /* Standard black for high contrast elements */
+  --gray-color: #A0A7AD; /* Neutral gray for secondary text */
+  --white-color: #ffffff; /* White for contrast */
+  --light-color: #D1D9E1; /* Light gray for borders or light backgrounds */
+  --yellow-color: #FFC947; /* Accent color: yellow with a softer tone */
+  --success-color: #04CE78; /* Success green from the logo */
+  --error-color: #dc3545; /* Standard error red */
+  --th-border-color: #D8DDE1; /* Table border color */
+  --title-font: 'Outfit', sans-serif; /* Font for headings */
+  --body-font: 'DM Sans', sans-serif; /* Font for body text */
+  --icon-font: "Font Awesome 6 Pro"; /* Icon font */
+  --main-container: 1224px; /* Container width */
+  --container-gutters: 24px; /* Gutter size */
+  --section-space: 120px; /* Spacing for large sections */
+  --section-space-mobile: 80px; /* Mobile spacing */
+  --section-title-space: 60px; /* Title spacing */
+  --ripple-ani-duration: 5s; /* Ripple animation duration */
 }
+
 
 /*------------------- 1.5. Typography -------------------*/
 html,

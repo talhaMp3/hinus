@@ -28,49 +28,10 @@ class ProductController extends Controller
             return view('admin.product.add-product',compact('CategoryData'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    // public function store(Request $request)
-    // {
 
-    //     dd($request->all());
-    //     // Create a new category
-    //     $product = new Products();
-    //     $product->category_id = decrypt($request->category_id);
-    //     $product->title = $request->title;
-    //     $product->description = $request->description;
-    //     $product->slug = \Illuminate\Support\Str::slug($request->title, '-');
-    //     $product->created_by = auth()->id();
-    //     $product->status = $request->has('status') ? 1 : 0;
-    //     $product->save();
-
-    //     if ($request->hasFile('main_image') && $request->file('main_image')->isValid()) {
-    //         $main_image_Uploaded_File = $request->file('main_image');
-
-    //         $logoWebpImageName = 'IMG_' . strtotime(now()) . $product->id . '.webp';
-
-    //         $imageDir = public_path(config('constant.IMG_DIR.CATEGORY_IMAGE'));
-
-    //         if (!is_dir($imageDir)) {
-    //             mkdir($imageDir, 0777, true);
-    //         }
-
-    //         $main_image_Uploaded_File->move($imageDir, $logoWebpImageName);
-
-    //         $product->main_image = $logoWebpImageName;
-    //         $product->save();
-    //     }
-
-    //     // Redirect with a success message
-    //     return redirect()->route('product.create')->with('success', 'Product Added Successfully.');
-    // }
     public function store(Request $request)
     {
-        // Dump all request data for debugging
-        // dd($request->all());
 
-        // Create a new product
         $product = new Products();
         $product->category_id = decrypt($request->category_id);
         $product->title = $request->title;
@@ -81,7 +42,6 @@ class ProductController extends Controller
         $product->otm = $request->has('otm') ? 1 : 0;
         $product->save();
 
-        // Handle main image upload
         if ($request->hasFile('main_image') && $request->file('main_image')->isValid()) {
             $main_image_Uploaded_File = $request->file('main_image');
 
@@ -89,16 +49,29 @@ class ProductController extends Controller
 
             $imageDir = public_path(config('constant.IMG_DIR.MAIN_IMAGE'));
 
-            // Create the directory if it doesn't exist
             if (!is_dir($imageDir)) {
                 mkdir($imageDir, 0777, true);
             }
 
-            // Move the main image to the directory
             $main_image_Uploaded_File->move($imageDir, $mainImageWebpName);
 
-            // Save the main image name in the database
             $product->main_image = $mainImageWebpName;
+            $product->save();
+        }
+        if ($request->hasFile('hri') && $request->file('hri')->isValid()) {
+            $main_image_Uploaded_File = $request->file('hri');
+
+            $mainImageWebpName = 'IMG_' . strtotime(now()) . $product->id . '.webp';
+
+            $imageDir = public_path(config('constant.IMG_DIR.MAIN_IMAGE'));
+
+            if (!is_dir($imageDir)) {
+                mkdir($imageDir, 0777, true);
+            }
+
+            $main_image_Uploaded_File->move($imageDir, $mainImageWebpName);
+
+            $product->hri = $mainImageWebpName;
             $product->save();
         }
 
@@ -202,6 +175,31 @@ class ProductController extends Controller
             $product->save();
         }
 
+        if ($request->hasFile('hri') && $request->file('hri')->isValid()) {
+            $main_image_Uploaded_File = $request->file('hri');
+
+            $mainImageWebpName = 'IMG_' . strtotime(now()) . $product->id . '.webp';
+
+            $imageDir = public_path(config('constant.IMG_DIR.MAIN_IMAGE'));
+
+            // Create the directory if it doesn't exist
+            if (!is_dir($imageDir)) {
+                mkdir($imageDir, 0777, true);
+            }
+
+            // Move the main image to the directory
+            $main_image_Uploaded_File->move($imageDir, $mainImageWebpName);
+
+            // Delete the old main image if it exists
+            if ($product->hri && file_exists($imageDir . '/' . $product->hri)) {
+                unlink($imageDir . '/' . $product->hri);
+            }
+
+            // Update the main image name in the database
+            $product->hri = $mainImageWebpName;
+            $product->save();
+        }
+
         // Handle other images (optional)
         if ($request->hasFile('other_images')) {
             $otherImages = json_decode($product->other_images, true) ?? [];
@@ -244,6 +242,12 @@ class ProductController extends Controller
         // Delete the main image if it exists
         if ($product->main_image) {
             $mainImagePath = public_path(config('constant.IMG_DIR.MAIN_IMAGE') . '/' . $product->main_image);
+            if (file_exists($mainImagePath)) {
+                unlink($mainImagePath); // Delete the main image
+            }
+        }
+        if ($product->hri) {
+            $mainImagePath = public_path(config('constant.IMG_DIR.MAIN_IMAGE') . '/' . $product->hri);
             if (file_exists($mainImagePath)) {
                 unlink($mainImagePath); // Delete the main image
             }

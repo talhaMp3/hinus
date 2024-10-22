@@ -24,12 +24,12 @@
                             <!--begin::Image input-->
                             <div class="image-input image-input-empty image-input-outline mb-3"
                               data-kt-image-input="true" style="background-image: url({{asset(config('constant.IMG_DIR.MAIN_IMAGE').'/'.$product->main_image)}})">
-                                <!--begin::Preview existing avatar-->
+                                <!--begin::Preview existing Image-->
                                 <div class="image-input-wrapper w-150px h-150px"></div>
                                 <label
                                     class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                                     data-kt-image-input-action="change" data-bs-toggle="tooltip" title=""
-                                    data-bs-original-title="Change avatar">
+                                    data-bs-original-title="Change Image">
                                     <!--begin::Icon-->
                                     <i class="bi bi-pencil-fill fs-7"></i>
                                     <!--end::Icon-->
@@ -41,13 +41,13 @@
                                 <span
                                     class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                                     data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title=""
-                                    data-bs-original-title="Cancel avatar">
+                                    data-bs-original-title="Cancel Image">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
                                 <span
                                     class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                                     data-kt-image-input-action="remove" data-bs-toggle="tooltip" title=""
-                                    data-bs-original-title="Remove avatar">
+                                    data-bs-original-title="Remove Image">
                                     <i class="bi bi-x fs-2"></i>
                                 </span>
                             </div>
@@ -57,15 +57,61 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card card-flush py-4">
+                        <!--begin::Card header-->
+                        <div class="card-header">
+                            <!--begin::Card title-->
+                            <div class="card-title">
+                                <h2>High Resolution Images</h2>
+                            </div>
+                            <!--end::Card title-->
+                        </div>
+                        <!--end::Card header-->
+                        <!--begin::Card body-->
+                        <div class="card-body text-center pt-0">
+                            <!--begin::Image input-->
+                            <div class="image-input image-input-empty image-input-outline mb-3"
+                              data-kt-image-input="true" style="background-image: url({{asset(config('constant.IMG_DIR.MAIN_IMAGE').'/'.$product->hri)}})">
+                                <!--begin::Preview existing Image-->
+                                <div class="image-input-wrapper w-150px h-150px"></div>
+                                <label
+                                    class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="change" data-bs-toggle="tooltip" title=""
+                                    data-bs-original-title="Change Image">
+                                    <!--begin::Icon-->
+                                    <i class="bi bi-pencil-fill fs-7"></i>
+                                    <!--end::Icon-->
+                                    <!--begin::Inputs-->
+                                    <input type="file" name="hri" accept=".png, .jpg, .jpeg" />
+                                    <input type="hidden" name="avatar_remove" />
+                                    <!--end::Inputs-->
+                                </label>
+                                <span
+                                    class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title=""
+                                    data-bs-original-title="Cancel Image">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <span
+                                    class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="remove" data-bs-toggle="tooltip" title=""
+                                    data-bs-original-title="Remove Image">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                            </div>
+                            <div class="text-muted fs-7">
+                                Set High Resolution Images. Only *.png,
+                                *.jpg and *.jpeg image files are accepted
+                            </div>
+                        </div>
+                    </div>
                     <div class="card card-flush py-4" data-select2-id="select2-data-132-lw5f">
                         <div class="card-header">
                             <div class="card-title">
-                                <h2>Product Template</h2>
+                                <h2>Product Category</h2>
                             </div>
                         </div>
                         <div class="card-body pt-0" data-select2-id="select2-data-131-gw1q">
-                            <label for="kt_ecommerce_add_product_store_template" class="form-label">Select a product
-                                template</label>
                             <select class="form-select mb-2 select2-hidden-accessible" name="category_id" data-control="select2"
                                 data-hide-search="true" data-placeholder="Select an option"
                                 id="kt_ecommerce_add_product_store_template"
@@ -83,8 +129,8 @@
                                 @endforeach
 
                             </select>
-                            <div class="text-muted fs-7">Assign a template from your current theme to define how a
-                                single product is displayed.</div>
+                            <div class="text-muted fs-7">Select a product
+                                template</div>
                         </div>
                     </div>
                     <div class="card card-flush py-4">
