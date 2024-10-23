@@ -1,47 +1,56 @@
 <x-frontend-layout>
-    <style>
-.custome-crd {
-    position: relative;
-    overflow: hidden;
-}
+<style>
+    .custome-crd {
+        position: relative;
+        overflow: hidden;
+    }
 
-.custome-crd > .cus-spn, .cus-h3 {
-    color: #ffffff !important; /* Default color for text */
-}
+    .custome-crd>.cus-spn,
+    .cus-h3 {
+        color: #ffffff !important;
+        /* Default color for text */
+        transition: color 0.3s ease;
+    }
 
-/* .custome-crd:hover > h3 ,span {
-     color: #000000;  
-} */
+    .custome-crd::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.562);
+        /* Overlay with default opacity */
+        transition: background-color 0.3s ease;
+    }
 
-.custome-crd::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.562); /* Overlay with default opacity */
-    /* z-index: 1; */
-    transition: background-color 0.3s ease;
-}
+    .custome-crd:hover::before {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 
-.custome-crd:hover::before {
-    background-color: rgba(0, 0, 0, 0.7); /* Darken overlay on hover */
-}
+    .custome-crd img,
+    .custome-crd div {
+        position: relative;
+        /* z-index: 2; */
+    }
 
-.custome-crd img, .custome-crd div {
-    position: relative;
-    /* z-index: 2; */
-}
-.custome-crd .th-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    /* z-index: 2;  */
-}
+    .custome-crd .th-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        /* z-index: 2;  */
+    }
 
+    .custome-crd:hover {
+    background-color: #fffffffd;
+    }
+    .custome-crd:hover>.cus-spn,
+    .custome-crd:hover .cus-h3 {
+        color: #000000 !important;
+    }
+    /* On hover, change text color to black */
+</style>
 
-    </style>
     <!--==============================
 Hero Area
 ==============================-->
@@ -88,15 +97,16 @@ Hero Area
         </div>
         <div class="hero-thumb-wrap">
             <div class="hero-thumb" data-slider-tab="#heroSlide1">
-                @foreach ($minImages as $item)
-                    <div class="tab-btn active">
-                        <img src="{{ asset(config('constant.IMG_DIR.MINI_IMAGE') . '/' . $item) }}" alt="Image">
-                    </div>
-                @endforeach
+                @if (!empty($minImages))
+                    @foreach ($minImages as $item)
+                        <div class="tab-btn active">
+                            <img src="{{ asset(config('constant.IMG_DIR.MINI_IMAGE') . '/' . $item) }}" alt="Image">
+                        </div>
+                    @endforeach
+                @endif
                 {{-- <div class="tab-btn active">
                     <img src="{{asset('frontend/assets/img/hero/hero_thumb_1_1.png')}}" alt="Image">
                 </div> --}}
-
             </div>
         </div>
     </div>
@@ -173,16 +183,16 @@ Feature Area
                 <div class="swiper-wrapper">
                     @foreach ($CategoryData as $item)
                         {{-- <div class=""> --}}
-                               <div class="col-xl-4 col-md-6 swiper-slide ">
-                <div class="offer-card mega-hover custome-crd" 
-     data-bg-src="{{asset(config('constant.IMG_DIR.CATEGORY_IMAGE').'/'.$item->cat_image)}}" 
-     style="height: 250px;">
-                        <span class="h6 box-subtitle cus-spn">GET UP TO 26%</span>
-                        <h3 class="box-title cus-h3">{{$item->cat_name}}</h3>
-                        {{-- <p class="price">$80.00 - <del>$120.00</del></p> --}}
-                        <a href="shop-details.htmld" class="th-btn btn-sm style2">Shop Now</a>
-                    </div>
-                </div>
+                        <div class="col-xl-4 col-md-6 swiper-slide ">
+                            <div class="offer-card mega-hover custome-crd"
+                                data-bg-src="{{ asset(config('constant.IMG_DIR.CATEGORY_IMAGE') . '/' . $item->cat_image) }}"
+                                style="height: 250px;">
+                                <span class="h6 box-subtitle cus-spn">GET UP TO 26%</span>
+                                <h3 class="box-title cus-h3">{{ $item->cat_name }}</h3>
+                                {{-- <p class="price">$80.00 - <del>$120.00</del></p> --}}
+                                <a href="{{route('user.shop',['category'=>$item->slug])}}" class="th-btn btn-sm style2">Shop Now</a>
+                            </div>
+                        </div>
                         {{-- </div> --}}
                     @endforeach
 
@@ -215,16 +225,16 @@ Product Area
     <section class="space" id="shop-sec">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
-                  <div class="row justify-content-md-between justify-content-center align-items-center">
-                        <div class="col-md">
-                            <h3 class="sec-title has-line">Our Latest Products</h3>
-                        </div>
-                        <div class="col-md-auto mt-n3 mt-md-0">
-                            <div class="sec-btn">
-                                <a href="shop.html" class="th-btn style-smoke">VIEW ALL PRODUCTS</a>
-                            </div>
+                <div class="row justify-content-md-between justify-content-center align-items-center">
+                    <div class="col-md">
+                        <h3 class="sec-title has-line">Our Latest Products</h3>
+                    </div>
+                    <div class="col-md-auto mt-n3 mt-md-0">
+                        <div class="sec-btn">
+                            <a href="{{route('user.shop')}}" class="th-btn style-smoke">VIEW ALL PRODUCTS</a>
                         </div>
                     </div>
+                </div>
                 <div class="col-12">
                     <div class="filter-menu filter-menu-active">
                         <button data-filter="*" class="th-btn active" type="button">All Products</button>
@@ -333,43 +343,43 @@ Product Area
                         </div>
                         <div class="col-md-auto mt-n3 mt-md-0">
                             <div class="sec-btn">
-                                <a href="shop.html" class="th-btn style-smoke">VIEW ALL PRODUCTS</a>
+                                <a href="{{route('user.shop')}}" class="th-btn style-smoke">VIEW ALL PRODUCTS</a>
                             </div>
                         </div>
                     </div>
                     <div class="row gy-40">
 
-                @foreach ($TopProduct as $item)
-                    <div class=" col-lg-4 col-sm-6 ">
-                        <div class="th-product product-grid">
-                            <div class="product-img">
-                                <img src="{{ asset(config('constant.IMG_DIR.MAIN_IMAGE') . '/' . $item->main_image) }}"
-                                    alt="Product Image">
-                                <div class="actions">
-                                    <a href="#QuickView" class="icon-btn popup-content QuickView"
-                                        data-slug="{{ $item->slug }}"><i class="far fa-eye"></i></a>
-                                    <button class="icon-btn AddWishlist wishlist SetWishlist active"
-                                        data-slug="{{ $item->slug }}"><i class="far fa-heart"></i></a>
+                        @foreach ($TopProduct as $item)
+                            <div class=" col-lg-4 col-sm-6 ">
+                                <div class="th-product product-grid">
+                                    <div class="product-img">
+                                        <img src="{{ asset(config('constant.IMG_DIR.MAIN_IMAGE') . '/' . $item->main_image) }}"
+                                            alt="Product Image">
+                                        <div class="actions">
+                                            <a href="#QuickView" class="icon-btn popup-content QuickView"
+                                                data-slug="{{ $item->slug }}"><i class="far fa-eye"></i></a>
+                                            <button class="icon-btn AddWishlist wishlist SetWishlist active"
+                                                data-slug="{{ $item->slug }}"><i class="far fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <a href="{{ route('user.shopDetail', ['slug' => $item->slug]) }}"
+                                            class="product-category"> {{ $item->category->cat_name }}</a>
+                                        <h3 class="product-title"><a
+                                                href="{{ route('user.shopDetail', ['slug' => $item->slug]) }}">
+                                                {{ $item->title }}</a></h3>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-content">
-                                <a href="{{ route('user.shopDetail', ['slug' => $item->slug]) }}"
-                                    class="product-category"> {{ $item->category->cat_name }}</a>
-                                <h3 class="product-title"><a
-                                        href="{{ route('user.shopDetail', ['slug' => $item->slug]) }}">
-                                        {{ $item->title }}</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+                        @endforeach
 
-                        
+
 
                     </div>
                 </div>
                 <div class="col-xl-3 mt-40 mt-xl-0">
                     <div class="offer-grid mega-hover text-center text-xl-start"
-                        data-bg-src="{{asset('frontend/assets/img/bg/cta_bg_2_1.jpg')}}">
+                        data-bg-src="{{ asset('frontend/assets/img/bg/cta_bg_2_1.jpg') }}">
                         <span class="h6 box-subtitle text-white">EXRTA 9% SAVING ON ORDER</span>
                         <p class="price text-white">$80.00 - <del>$120.00</del></p>
                         <h3 class="box-title text-white">For Weight Gain</h3>
@@ -815,7 +825,7 @@ Product Area
     <!--==============================
 Blog Area
 ==============================-->
-    <section class="space" id="blog-sec">
+    {{-- <section class="space" id="blog-sec">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg">
@@ -880,7 +890,7 @@ Blog Area
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--==============================
  Footer Area
 ==============================-->

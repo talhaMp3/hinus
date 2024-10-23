@@ -9,6 +9,7 @@ class QuickViewController extends Controller
 {
     public function quickView(Request $request)
     {
+        // dd($request->all());
         $ProductData = Products::with('category')->where('slug', $request->slug)->first();
         return response()->json([
             'status' => 'success',

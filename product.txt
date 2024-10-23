@@ -1,0 +1,79 @@
+<!-- Gynec Segment Product Description -->
+<h2>Gynec Segment Product</h2>
+<p>The Gynec segment focuses on providing essential healthcare products for women's health and well-being. This range includes specialized supplements, energy powders, and treatments formulated to support gynecological needs.</p>
+<ul>
+    <li>LB-TRAL – CF Sachets</li>
+    <li>LB-TRAL Energy powder</li>
+    <li>HINFER-LP Sachets</li>
+    <li>CALCI-CRAMP Tablets</li>
+    <li>HINVITA Q10 Tablets</li>
+    <li>URINUS Syrup</li>
+    <li>MUFREE Tablets</li>
+    <li>CEPOHIN Tablets</li>
+    <li>CEFIHIN Tablets</li>
+    <li>AZIHIN Tablets</li>
+    <li>SEDERM Cream</li>
+</ul>
+<p><strong>Upcoming Products:</strong></p>
+<ul>
+    <li>LB-TRAL – RG Sachets</li>
+    <li>HINVITA –PLUS Tablets</li>
+</ul>
+
+<!-- Physician Segment Product Description -->
+<h2>Physician Segment Product</h2>
+<p>The Physician segment offers a variety of products designed for general healthcare and medical treatments. This product line supports health management through targeted solutions for different medical conditions.</p>
+<ul>
+    <li>LB-TRAL – CF Sachets</li>
+    <li>HINFER-LP Sachets</li>
+    <li>CALCI-CRAMP Tablets</li>
+    <li>LB-TRAL Energy powder</li>
+    <li>HINVITA Q10 Tablets</li>
+    <li>URINUS Syrup</li>
+    <li>MUFREE Tablets</li>
+    <li>MUFREE Gel</li>
+    <li>CEPOHIN Tablets</li>
+    <li>CEFIHIN Tablets</li>
+    <li>AZIHIN Tablets</li>
+    <li>HINCOLD LM Tablets</li>
+    <li>HINCOLD DX Syrup</li>
+    <li>REBEHIN DSR Tablets</li>
+</ul>
+<p><strong>Upcoming Products:</strong></p>
+<ul>
+    <li>HINVITA –PLUS Tablets</li>
+</ul>
+
+<!-- Nutritional Range Description -->
+<h2>Nutritional Range</h2>
+<p>The Nutritional Range offers products designed to promote overall health through nutrition and supplementation. These products are aimed at improving energy, strength, and general wellness.</p>
+<ul>
+    <li>LB-TRAL – CF Sachets</li>
+    <li>HINFER-LP Sachets</li>
+    <li>CALCI-CRAMP Tablets</li>
+    <li>LB-TRAL Energy powder</li>
+    <li>HINVITA Q10 Tablets</li>
+    <li>MUFREE Tablets</li>
+    <li>BASINUS Sachets</li>
+    <li>HINVITA –PLUS Tablets</li>
+    <li>LB-TRAL – RG Sachets</li>
+</ul>
+
+<!-- Antibiotics & Other Range Description -->
+<h2>Antibiotics & Other Range</h2>
+<p>This category includes a wide range of antibiotics and other essential pharmaceutical products. These items are key for managing infections, inflammation, and various other health conditions.</p>
+<ul>
+    <li>HINCOLD LM Tablets</li>
+    <li>HINCOLD DX Syrup</li>
+    <li>HINCOLD P Syrup</li>
+    <li>CEPOHIN Tablets</li>
+    <li>CEFIHIN Tablets</li>
+    <li>AZIHIN Tablets</li>
+    <li>URINUS Syrup</li>
+    <li>MUFREE Gel</li>
+    <li>REBEHIN DSR Capsule</li>
+    <li>ITRANUS Capsule</li>
+    <li>SEDERM Cream</li>
+    <li>HINFLAM SP Tablets</li>
+    <li>HINMEF P Syrup</li>
+</ul>

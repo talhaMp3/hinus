@@ -22,7 +22,7 @@ Checkout Area
                         <thead>
                             <tr>
                                 <th class="product-cb">#</th>
-                                <th class="product-remove"></th>
+                                <th class="product-thumbnail"></th>
                                 <th class="product-thumbnail">&nbsp;</th>
                                 <th class="product-name"><span class="tinvwl-full">Product Name</span><span class="tinvwl-mobile">Product</span></th>
                                 <th class="product-date">Date Added</th>
@@ -36,8 +36,8 @@ Checkout Area
                                 <td class="product-cb">
                                    <p>{{$loop->iteration}}</p>
                                 </td>
-                                <td class="product-remove">
-                                    <button type="submit" name="tinvwl-remove" title="Remove" class="remove-from-wishlist" data-id="{{encrypt($item->id)}}"><i class="fal fa-times"></i>
+                                <td class="">
+                                    <button type="submit" name="tinvwl-remove" title="Remove" class="btn btn-danger remove-from-wishlist" data-id="{{encrypt($item->id)}}"><i class="fal fa-times"></i>
                                     </button>
                                 </td>
                                 <td class="product-thumbnail">

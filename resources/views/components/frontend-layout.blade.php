@@ -33,23 +33,38 @@
     <meta name="theme-color" content="#ffffff"> --}}
 
 
-<link rel="apple-touch-icon" sizes="57x57" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-57x57.png')}}">
-<link rel="apple-touch-icon" sizes="60x60" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-60x60.png')}}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-72x72.png')}}">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-76x76.png')}}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-114x114.png')}}">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-120x120.png')}}">
-<link rel="apple-touch-icon" sizes="144x144" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-144x144.png')}}">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-152x152.png')}}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/apple-icon-180x180.png')}}">
-<link rel="icon" type="image/png" sizes="192x192" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/android-icon-192x192.png')}}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-32x32.png')}}">
-<link rel="icon" type="image/png" sizes="96x96" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-96x96.png')}}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/favicon-16x16.png')}}">
-<link rel="manifest" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/manifest.json')}}">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/favicons/ms-icon-144x144.png')}}">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/favicon-16x16.png') }}">
+    <link rel="manifest"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage"
+        content="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/favicons/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
 
     <!--==============================
  Google Fonts
@@ -59,22 +74,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!--==============================
  All CSS File
  ============================== -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/css/bootstrap.min.css') }}">
     <!-- Fontawesome Icon -->
-    <link rel="stylesheet" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/css/fontawesome.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/css/fontawesome.min.css') }}">
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/css/magnific-popup.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/css/magnific-popup.min.css') }}">
     <!-- Swiper Js -->
-    <link rel="stylesheet" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/css/swiper-bundle.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/css/swiper-bundle.min.css') }}">
     <!-- datetimepicker -->
-    <link rel="stylesheet" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/css/jquery.datetimepicker.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/css/jquery.datetimepicker.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/css/style.css') }}">
+    <link rel="stylesheet"
+        href="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/css/style.css') }}">
 
 </head>
 
@@ -204,7 +226,8 @@ Product Lightbox
                 </div>
             </div>
         </div>
-    </div><!--==============================
+    </div>
+    <!--==============================
     Sidemenu
 ============================== -->
     <div class="sidemenu-wrapper sidemenu-info ">
@@ -213,7 +236,8 @@ Product Lightbox
             <div class="widget  ">
                 <div class="th-widget-about">
                     <div class="about-logo">
-                        <a href="{{route('user.index')}}"><img src="{{asset('frontend/assets/img/logo.svg')}}" alt="Mediax"></a>
+                        <a href="{{ route('user.index') }}"><img src="{{ asset('frontend/assets/img/logo.svg') }}"
+                                alt="Mediax"></a>
                     </div>
                     <p class="about-text">Subscribe to out newsletter today to receive latest news administrate cost
                         effective for tactical data.</p>
@@ -277,18 +301,15 @@ Product Lightbox
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="{{route('user.index')}}"><img src="{{asset('frontend/assets/img/logo.svg')}}" alt="Mediax"></a>
+                <a href="{{ route('user.index') }}"><img src="{{ asset('frontend/assets/img/logo.svg') }}"
+                        alt="Mediax"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
                     <li><a href="{{ route('user.index') }}">Home</a></li>
                     <li><a href="{{ route('user.about') }}">About Us</a></li>
                     <li><a href="{{ route('user.shop') }}">Shop</a></li>
-
-
-                    <li>
-                        <a href="{{ route('user.contact') }}">Contact</a>
-                    </li>
+                    <li><a href="{{ route('user.contact') }}">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -301,8 +322,9 @@ Product Lightbox
                 <div class="row justify-content-center justify-content-lg-between align-items-center gy-2">
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-logo">
-                            <a href="{{route('user.index')}}"><img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/logo.svg') }}"
-                                 style="width: 202px;height:62px"   alt="Mediax"></a>
+                            <a href="{{ route('user.index') }}"><img
+                                    src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/logo.svg') }}"
+                                    style="width: 202px;height:62px" alt="Mediax"></a>
                         </div>
                     </div>
                     {{-- <div class="col-auto">
@@ -356,40 +378,69 @@ Product Lightbox
                         </div>
                         <div class="col-auto d-inline-block d-lg-none">
                             <div class="header-logo">
-                                <a href="{{route('user.index')}}"><img src="{{asset('frontend/assets/img/logo-white.svg')}}"
-                                        alt="Mediax"></a>
+                                <a href="{{ route('user.index') }}"><img
+                                        src="{{ asset('frontend/assets/img/logo-white.svg') }}" alt="Mediax"></a>
                             </div>
                         </div>
                         <div class="col-auto ms-auto">
                             <div class="header-button">
-                                <div class="dropdown-link d-none d-lg-inline-block">
-                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1"
-                                        data-bs-toggle="dropdown" aria-expanded="true"><img
-                                            src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/icon/english.png') }}" alt="icon">
-                                        English</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <li>
-                                            <a href="#">German</a>
-                                            <a href="#">French</a>
-                                            <a href="#">Italian</a>
-                                            <a href="#">Latvian</a>
-                                        </li>
-                                    </ul>
+                                <div class="d-none d-lg-inline-block">
+                                    <a href="#" role="button" id="dropdownMenuLink1">
+                                        {{-- <img src="{{ config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/icon/english.png') }}" alt="icon"> --}}
+                                        {{-- English --}}
+                                        <div id="google_translate_element"></div>
+                                    </a>
                                 </div>
-                                <button type="button" class="icon-btn sideMenuCart">
-                                    <span class="badge">5</span>
-                                    <i class="fal fa-cart-shopping"></i>
-                                </button>
-                                <a href="wishlist.html" class="icon-btn d-none d-lg-inline-block">
-                                    <span class="badge">3</span>
+                                <a href="{{route('wishlist.index')}}" class="icon-btn ">
+                                    {{-- <span class="badge">2023</span> --}}
                                     <i class="fal fa-heart"></i>
                                 </a>
-                                <button type="button" class="icon-btn sideMenuInfo d-none d-lg-inline-block"><i
-                                        class="fal fa-bars"></i></button>
-                                <button type="button" class="th-menu-toggle d-block d-lg-none"><i
-                                        class="far fa-bars"></i></button>
+                                <button type="button" class="icon-btn sideMenuInfo d-none d-lg-inline-block">
+                                    <i class="fal fa-bars"></i>
+                                </button>
+                                <button type="button" class="th-menu-toggle d-block d-lg-none">
+                                    <i class="far fa-bars"></i>
+                                </button>
                             </div>
                         </div>
+
+                        <!-- Google Translate Element -->
+
+
+                        <!-- Google Translate API Script -->
+                        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        </script>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en',
+                                    includedLanguages: 'en,hi,gu,ur,ar',
+                                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                }, 'google_translate_element');
+                            }
+
+                            // Function to trigger the language selection
+                            function changeLanguage(lang) {
+                                var frame = document.querySelector('.goog-te-menu-frame:first-of-type');
+                                if (!frame) {
+                                    alert('Translate menu not found. Please try again.');
+                                    return false;
+                                }
+                                var translateFrame = frame.contentWindow.document;
+                                $(translateFrame).find('.goog-te-menu2-item span.text:contains("' + lang + '")').click();
+                            }
+
+                            // Language selection on dropdown
+                            $(document).ready(function() {
+                                $('.lang-select').on('click', function(e) {
+                                    e.preventDefault();
+                                    var lang = $(this).data('lang');
+                                    changeLanguage(lang);
+                                });
+                            });
+                        </script>
+
+
                     </div>
                 </div>
             </div>
@@ -398,7 +449,7 @@ Product Lightbox
 
     {{ $slot }}
     <footer class="footer-wrapper footer-layout2"
-        data-bg-src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/bg/footer_bg_2.jpg') }}">
+        data-bg-src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/bg/footer_bg_2.jpg') }}">
         <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-between">
@@ -493,118 +544,74 @@ Product Lightbox
                 </div>
             </div>
         </div>
-        <div class="copyright-wrap">
+        {{-- <div class="copyright-wrap">
             <div class="container">
                 <div class="row gy-2 align-items-center">
                     <div class="col-md-7">
                         <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a
-                                href="{{route('user.index')}}">Mediax</a>. All Rights Reserved.</p>
+                                href="{{ route('user.index') }}">Mediax</a>. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-5 text-center text-md-end">
                         <div class="payment-img">
-                            <img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/normal/payment_methods.png') }}" alt="Image">
+                            <img src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/img/normal/payment_methods.png') }}"
+                                alt="Image">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </footer>
 
-    <!--********************************
-   Code End  Here
- ******************************** -->
-
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
+    {{-- <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg>
-    </div>
+    </div> --}}
 
-    <!--==============================
-    All Js File
-============================== -->
+
     <!-- Jquery -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/vendor/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/vendor/jquery-3.7.1.min.js') }}">
+    </script>
     <!-- Swiper Js -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/swiper-bundle.min.js') }}">
+    </script>
     <!-- Bootstrap -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/bootstrap.min.js') }}"></script>
     <!-- Magnific Popup -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/jquery.magnific-popup.min.js') }}">
+    </script>
     <!-- Counter Up -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/jquery.counterup.min.js') }}">
+    </script>
     <!-- datetimepicker -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/jquery.datetimepicker.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/jquery.datetimepicker.min.js') }}">
+    </script>
     <!-- Range Slider -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/jquery-ui.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/jquery-ui.min.js') }}"></script>
     <!-- Isotope Filter -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/imagesloaded.pkgd.min.js') }}">
+    </script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
 
     <!-- Main Js File -->
-    <script src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/js/main.js') }}"></script>
+    <script src="{{ config('constant.DIR_PATH.PUBLIC_PATH') . asset('frontend/assets/js/main.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css" rel="stylesheet">
-    <script>
-        // $(document).ready(function() {
-        //     $('.QuickView').on('click', function(e) {
-        //         e.preventDefault();
-        //         var productslug = $(this).data('slug');
-        //         $.ajax({
-        //             url: '{{ route('quick.view') }}',
-        //             method: 'GET',
-        //             data: {
-        //                 slug: productslug,
-        //                 _token: '{{ csrf_token() }}'
-        //             },
-        //             success: function(response) {
-        //                 if (response.status === 'success') {
-        //                     alert(response.product.slug);
-        //                     $(".SetWishlist").attr("data-slug", response.product.slug);
-        //                     $('.productImage').attr("src", response.product.main_image_url);
-        //                     $(".productTitle").text(response.product.title);
-        //                     $(".productDescription").html(response.product.description);
-        //                     $(".productCategory").html(response.product.category);
-        //                     // Show the modal
-        //                     $('#QuickViewModal').modal('show');
-        //                 }
-        //             },
-        //             error: function(xhr, status, error) {
-        //                 Swal.fire("Error!", error, "error");
-        //             }
-        //         });
-        //     });
-
-        //     $('.AddWishlist').on('click', function() {
-        //         var productSlug = $(this).data('slug');
-        // alert(productSlug);
-        //         // AJAX request to add the product to the wishlist
-        //         $.ajax({
-        //             url: '{{ route('wishlist.add') }}', // Replace with your actual endpoint
-        //             method: 'POST',
-        //             data: {
-        //                 slug: productSlug,
-        //                 _token: '{{ csrf_token() }}' // CSRF token for security
-        //             },
-        //             success: function(response) {
-        //                 // Assuming the response contains a message
-        //                 $('.wishlist-message').text(response.message).fadeIn().delay(2000).fadeOut();
-
-        //                 // Optionally, change the button text or style
-        //                 $('#product-' + productSlug + ' .AddWishlist').text('Added to Wishlist').prop('disabled', true);
-        //             },
-        //             error: function(xhr) {
-        //                 // Handle errors here
-        //                 $('.wishlist-message').text('Could not add to wishlist. Please try again.').fadeIn().delay(2000).fadeOut();
-        //             }
-        //         });
-        //     });
-
-        //         });
-    </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6718cba12480f5b4f5922b57/1iasdmscq';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
     <script>
         $(document).ready(function() {
             $('.QuickView').on('click', function(e) {
@@ -621,7 +628,7 @@ Product Lightbox
                         if (response.status === 'success' && response.product) {
                             // Update the modal with product data
                             $(".SetWishlist").attr("data-slug", response.product.slug);
-                            
+
                             $('.productImage').attr("src", response.product.main_image_url ||
                                 'default_image.jpg'); // Default image if none
                             $(".productTitle").text(response.product.title || 'No Title');
@@ -642,42 +649,7 @@ Product Lightbox
                 });
             });
 
-            // $('.AddWishlist').on('click', function() {
-            //     var productSlug = $(this).data('slug');
 
-            //     // SweetAlert 2 confirmation
-            //     Swal.fire({
-            //         title: 'Add to Wishlist?',
-            //         text: "Do you want to add this product to your wishlist?",
-            //         icon: 'question',
-            //         showCancelButton: true,
-            //         confirmButtonColor: '#3085d6',
-            //         cancelButtonColor: '#d33',
-            //         confirmButtonText: 'Yes, add it!',
-            //         cancelButtonText: 'No, cancel'
-            //     }).then((result) => {
-            //         if (result.isConfirmed) {
-            //             // Proceed with the AJAX request if the user confirms
-            //             $.ajax({
-            //                 url: '{{ route('wishlist.add') }}',
-            //                 method: 'POST',
-            //                 data: {
-            //                     slug: productSlug,
-            //                     _token: '{{ csrf_token() }}'
-            //                 },
-            //                 success: function(response) {
-            //                     $('.wishlist-message').text(response.message).fadeIn().delay(2000).fadeOut();
-            //                     $(this).text('Added to Wishlist').prop('disabled', true); // Use 'this' context
-            //                 }.bind(this), 
-            //                 error: function(xhr) {
-
-            //                     $('.wishlist-message').text('Could not add to wishlist. Please try again.').fadeIn().delay(2000).fadeOut();
-
-            //                 }
-            //             });
-            //         }
-            //     });
-            // });
             $('.AddWishlist').on('click', function() {
                 var productSlug = $(this).data('slug');
                 var addButton = $(this); // Save reference to the clicked button
@@ -716,7 +688,7 @@ Product Lightbox
 
                                 if (xhr.responseJSON && xhr.responseJSON.error) {
                                     errorMessage = xhr.responseJSON
-                                    .error; // If error message is available in JSON response
+                                        .error; // If error message is available in JSON response
                                 }
 
                                 // Show the error message in SweetAlert2
