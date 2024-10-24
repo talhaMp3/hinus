@@ -22,11 +22,12 @@ Product Area
                     <div class="th-product product-grid">
                         <div class="product-img">
                             <img src="{{asset(config('constant.IMG_DIR.MAIN_IMAGE').'/'.$item->main_image)}}" alt="Product Image">
-                            <div class="actions">
-                                <a href="#QuickView" class="icon-btn popup-content"><i class="far fa-eye"></i></a>
-                                <a href="cart.html" class="icon-btn"><i class="far fa-cart-plus"></i></a>
-                                <a href="wishlist.html" class="icon-btn"><i class="far fa-heart"></i></a>
-                            </div>
+                                 <div class="actions">
+                                            <a href="#QuickView" class="icon-btn popup-content QuickView"
+                                                data-slug="{{ $item->slug }}"><i class="far fa-eye"></i></a>
+                                            <button class="icon-btn AddWishlist wishlist SetWishlist active"
+                                                data-slug="{{ $item->slug }}"><i class="far fa-heart"></i></a>
+                                        </div>
                         </div>
                         <div class="product-content">
                             <a href="{{route('user.shopDetail',['slug'=>$item->slug])}}" class="product-category"> {{$item->category->cat_name}}</a>

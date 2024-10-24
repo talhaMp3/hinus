@@ -265,24 +265,12 @@ Product Lightbox
                 <h3 class="widget_title">Let’s Stay In Touch</h3>
                 <div class="newsletter-widget">
                     <p class="footer-text">Subscribe for newsletter</p>
-                    <form action="#" class="newsletter-form">
+                    <form action="{{route('newslatter.store')}}" class="newsletter-form">
                         <div class="form-group">
-                            <input class="form-control" type="email" placeholder="Enter Email" required="">
+                            <input class="form-control" type="email" placeholder="Enter Email" name="email" required="">
                         </div>
                         <button type="submit" class="simple-icon"><i class="fa-solid fa-paper-plane"></i></button>
                     </form>
-                    <div class="form-group">
-                        <input type="checkbox" id="checkboxagree" name="checkboxagree">
-                        <label for="checkboxagree">I agree with the terms & conditions</label>
-                    </div>
-                    <div class="btn-group">
-                        <a href="https://play.google.com/" class="img-btn">
-                            <img src="assets/img/normal/apple_store.png" alt="icon">
-                        </a>
-                        <a href="https://play.google.com/" class="img-btn">
-                            <img src="assets/img/normal/play_store.png" alt="icon">
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -516,7 +504,7 @@ Product Lightbox
                             <h3 class="widget_title">Let’s Stay In Touch</h3>
                             <div class="newsletter-widget">
                                 <p class="footer-text">Subscribe for newsletter</p>
-                                <form action="#" class="newsletter-form">
+                                <form action="{{route('newslatter.store')}}" class="newsletter-form">
                                     <div class="form-group">
                                         <input class="form-control" type="email" placeholder="Enter Email"
                                             required="">
@@ -524,10 +512,8 @@ Product Lightbox
                                     <button type="submit" class="simple-icon"><i
                                             class="fa-solid fa-paper-plane"></i></button>
                                 </form>
-                                <div class="form-group">
-                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                    <label for="checkbox">I agree with the terms & conditions</label>
-                                </div>
+
+                              
                                 {{-- <div class="btn-group">
                                     <a href="https://play.google.com/" class="img-btn">
                                         <img src="{{config('constant.DIR_PATH.PUBLIC_PATH').asset('frontend/assets/img/normal/apple_store.png') }}"

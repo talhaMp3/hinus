@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->unsignedBigInteger('category_id')->nullable(); // Use unsignedBigInteger for foreign key relationships
             $table->string('main_image')->nullable();
+            $table->string('hri')->nullable();
             $table->longText('other_images')->nullable();
             $table->longText('description')->nullable();
             $table->string('slug')->nullable();
