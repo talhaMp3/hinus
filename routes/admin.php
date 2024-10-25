@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\admin\HeroController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\CategoryController;
@@ -23,9 +25,13 @@ Route::middleware(['auth:admin'])->group(
     function () {
 Route::prefix('admin')->group(function () {
 
-    Route::get('dashboard', function () {
-        return view('admin.index');
-    })->name('admin.dashboard');
+    Route::get('/', [CategoryController::class, 'index'])->name('category.index');
+    
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
+            // Route::get('dashboard', function () {
+                   //    return view('admin.index');
+                      // })->name('admin.dashboard');
     
     Route::prefix('category')->group(function () {
         Route::get('/', [CategoryController::class, 'index'])->name('category.index');
@@ -54,5 +60,6 @@ Route::prefix('admin')->group(function () {
         Route::post('{id}/update', [HeroController::class, 'update'])->name('hero.update');
         Route::get('{id}/delete', [HeroController::class, 'destroy'])->name('hero.destroy');
     });
+            Route::get('{id}/delete', [ContactController::class, 'destroy'])->name('contact.destroy');
 });
 });

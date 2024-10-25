@@ -484,22 +484,6 @@ Product Lightbox
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Popular service</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu">
-                                    <li><a href="service-details.html">Cardiology Care</a></li>
-                                    <li><a href="service-details.html">Urgent Care</a></li>
-                                    <li><a href="service-details.html">Orthopedic Care</a></li>
-                                    <li><a href="service-details.html">Diagnosis department</a></li>
-                                    <li><a href="service-details.html">Gastroenterology</a></li>
-                                    <li><a href="service-details.html">Therapy department</a></li>
-                                    <li><a href="service-details.html">Dental service</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-auto">
                         <div class="widget footer-widget">
                             <h3 class="widget_title">Let’s Stay In Touch</h3>
                             <div class="newsletter-widget">

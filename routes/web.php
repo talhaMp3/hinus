@@ -9,10 +9,7 @@ use App\Http\Controllers\NewsLatterController;
 use App\Http\Controllers\ShopDetailController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\CategoryController;
-
-
-
-
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [HomeController::class, 'index'])->name('user.index');
 Route::get('shop', [ShopController::class, 'index'])->name('user.shop');
@@ -28,6 +25,8 @@ Route::prefix('wishlist')->group(function () {
 Route::get('/otp', [WishlistController::class, 'otpApi'])->name('wishlist.otp');
 
 Route::get('newslatter', [NewsLatterController::class, 'store'])->name('newslatter.store');
+
+Route::post('contac', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('about', function () {
     return view('frontend.about');
